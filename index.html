@@ -1,0 +1,82 @@
+<!-- declara que o documento é do tipo html 5-->
+<!DOCTYPE html>
+<!-- idioma principal do conteúdo -->
+<html lang="en">
+  <!-- Contém meta informações da página -->
+
+  <!-- !!! -->
+  <!-- atributo style pode ser usado realizar várias personalizações como:
+cor de fundo
+cor do elemento
+familia da fonte
+alinhamento em relação a tela 
+o tamanho da letra entre outros
+-->
+  <!-- !!! -->
+
+  <head>
+    <!-- essa tag seve para importar estilos css, o atributo rel especifica qual o conteúdo desse arquivo e o href o caminho onde está o arquivo -->
+    <link rel="stylesheet" href="css/style1.css">
+    <!-- define qual é o padrão de caracteres da página ao ser lida -->
+    <meta charset="UTF-8" />
+    <!-- informações da janela acho... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da Página -->
+    <title id="titulo">Star Wars</title>
+  </head>
+  <!-- dentro do body fica o corpo da página -->
+  <body>
+    <!-- Tamanhos de titulo h1 até h6 -->
+    <!-- atributo style usado aqui para definir tamanho, aqui se usa tamanho em px  -->
+    <!--    é uma propriedade do css -->
+    <h1 style="font: size 60px" style="text-align: center">Star Wars</h1>
+    <h3 style="text-align: center">O Império Contra-Ataca</h3>
+    <!-- quebra de linha, sem tag de fechamento -->
+
+    <!-- Parágrafo -->
+    <!-- o atributo title dentro da tag serve informações adicionais do elemento e também em questões como acessibilidade  -->
+    <p title="sinopse">
+      Os Rebeldes se separam após o ataque imperial no planeta Hoth. Enquanto
+      Han Solo e a Princesa Leia são perseguidos pelo Império, Luke inicia seu
+      treino como um Jedi com o Mestre Yoda, antes de enfrentar Darth Vader e
+      descobrir sobre o seu passado.
+    </p>
+    <br />
+
+    <p style="text-align: center">
+      <!-- Define uma imagem, outra tag "vazia" == sem fechamento, src é um atributo e define um recurso semelhante ao href que é um link-->
+      <!-- alt é um texto alternativo caso a imagem não carregue ou por mitivos de acessibilidade, definimos também as medidas da img -->
+      <img
+        src="https://image.tmdb.org/t/p/w1280/yHzArdxaRF478ZT9qzqeZbrjVbo.jpg"
+        alt="photo-star-wars-v"
+        width="1080"
+        height="720"
+      />
+    </p>
+
+    <br />
+    <!-- Aninhamento de elementos -->
+    <p style="text-align: center">
+      <!-- Define um link, href dentro da tag de abertura sendo o próprio link, entre as tags o texto que será associado ao link -->
+      <!-- href é um atributo -->
+      <!-- style é um atributo que pode definir estilos para um item, nesse caso cor:vermelha -->
+      <a
+        style="color: red"
+        href="https://www.primevideo.com/detail/Star-Wars-O-Imp%C3%A9rio-Contra-Ataca-V/0O2UA3I2RIGIMMQIKNNOFP26VL?language=pt_BR#:~:
+      text=Star%20Wars%3A%20O%20Imp%C3%A9rio%20Contra-Ataca%20%28V%29%20Os%20Rebeldes,Darth%20Vader%20e%20descobrir%20sobre%20o%20seu%20passado."
+        >Assista Agora</a
+      >
+    </p>
+    <br />
+    <!-- dentro deste parágrafo o navegador vai ignorar qualquer formatação de texto que você colocar -->
+    <!-- para quebrar a linha é preciso usar a tag br -->
+    <!-- o id serve como um identificador, sendo mais fácil de encontrar para manipular -->
+    <p id="breve">
+      Star Wars Episódio V: O Império Contra-Ataca é o segundo filme e quinto
+      capítulo da série de filmes de <br />George Lucas
+    </p>
+    <!-- segunda opção -->
+    <!-- a tag pre define textos pré formatados -->
+    <pre>Originalmente lançado em 21 de Maio de      1980</pre>
+  </body>
+</html>

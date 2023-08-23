@@ -1,0 +1,10 @@
+#breve {
+    /* alinha ao centro */
+    text-align: center;
+    /* define a cor dourada para o elemento que possui o id breve */
+    color: gold;
+}
+/* Seleciona o elemento por id */
+#titulo {
+    text-align: center;
+}
