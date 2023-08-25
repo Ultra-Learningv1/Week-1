@@ -15,7 +15,7 @@ o tamanho da letra entre outros
   <!-- !!! -->
 
   <head>
-    <!-- estilo interno quando temos css dentro dessa tag em um documento html -->
+    <!-- estilo interno quando temos css dentro dessa tag em um documento html no head -->
     <!-- Para dois estilos definidos no mesmo elemento somente o ultimo é considerado -->
     <style>
       #umPara {
@@ -57,7 +57,7 @@ o tamanho da letra entre outros
     <!-- Tamanhos de titulo h1 até h6 -->
     <!-- atributo style usado aqui para definir tamanho, aqui se usa tamanho em px  -->
     <!--    é uma propriedade do css -->
-    <h1 style="font: size 60px; text-align: center; color: white">Star Wars</h1>
+    <h1 id="til" style="font: size 60px; text-align: center; color: white">Star Wars</h1>
     <h3
       style="
         text-align: center;
@@ -82,6 +82,7 @@ o tamanho da letra entre outros
     <p style="text-align: center">
       <!-- Define uma imagem, outra tag "vazia" == sem fechamento, src é um atributo e define um recurso semelhante ao href que é um link-->
       <!-- alt é um texto alternativo caso a imagem não carregue ou por mitivos de acessibilidade, definimos também as medidas da img -->
+      <!-- a tag map pode ser utilizada para tornar partes de uma imagem clicáveis, é necessário definir a propriedade usemap="#id" -->
       <img
         src="https://image.tmdb.org/t/p/w1280/yHzArdxaRF478ZT9qzqeZbrjVbo.jpg"
         alt="photo-star-wars-v"
@@ -121,10 +122,51 @@ o tamanho da letra entre outros
     <!-- a tag pre define textos pré formatados -->
     <pre id="umPara">Originalmente lançado em 21 de Maio de      1980</pre>
 
+    <!-- Strong ressalta importância e deixa em negrito , tag b somente negrito -->
+    <p style="color: white"><b>Outros</b> <strong>títulos</strong></p>
+    <!-- tag i - itálico, tag em - ênfase -->
+    <p id="filmeUm" style="color: white">Uma Nova <em>Esperança</em> (<i>1977</i>)</p>
+    <!-- tag small - realmente diminui o tamanho , mark detaca um texto-->
+    <p style="color: white">
+      <small>O Retorno de</small> <mark>Jedi (1983) </mark>
+    </p>
+    <!-- del - risca o texto , sub - sublinha -->
+    <p style="color: white">A <ins>Ameaça </ins>Fantasma (<del>1999</del>)</p>
+    <!-- sub poem o texto um pouco abaixo e o sup o oposto, ambos diminuem o texto -->
+    <p style="color: white"><sub>Ataque dos</sub> <sup>Clones</sup> (2002)</p>
+
+    <p style="text-align: center; font-size: 20px;">
+
+      <!-- Navega para título usando o id dele como ref -->
+      <!-- o elemento pode estar em outra página html
+      
+      Ex: "html_demo.html#C4"
+      -->
+      <a href="#til">volta para título</a>
+    </p>
+    
+
+    <hr>
+    <!-- para o atributo target temos 4 opções:
+    _self abre na mesma janela ou aba
+    _blank nova janela ou guia 
+    _parent quadro pai se houver iframe ou frama se não como self
+    _top janela ou aba principal substitui frames
+    -->
+    <a href="img/background.jpg" target="_self">Link</a>
+
     <!-- Pode utilizado para alterar o conteúdo html -->
     <script>
       // document.getElementById("umPara").style.display > oculta um elemento da tela
-      document.getElementById("umPara").innerHTML="Originalmente lançado em 21 de Maio de 1980";
+      document.getElementById("umPara").innerHTML =
+        "Originalmente lançado em 21 de Maio de 1980";
     </script>
+    <!-- tag blockquote citação de algum de fora
+    tag q citações curtas
+    tag abbr fornece abreviação para navegadores e sistemas de buscas
+    tag andress informações do autor do documento
+    tag cite citações de musicas, obras no geral, deixa o texto em itálico
+    tag bdo inverte o texto bacanaaa
+  -->
   </body>
 </html>
