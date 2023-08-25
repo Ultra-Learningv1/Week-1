@@ -3,8 +3,19 @@
     text-align: center;
     /* define a cor dourada para o elemento que possui o id breve */
     color: gold;
+    background-color: red;
 }
 /* Seleciona o elemento por id */
 #titulo {
     text-align: center;
 }
+/* Podemos também selecionar por classe p.center {}
+   Para todos os elementos html * {} 
+   Em grupo h1,h3,p {}
+   Elemento de classe
+   p.center {}
+    */
+
+    /* podemos definir cor com rgb(20,200,150) e rgba - mais um campo sendo alfa==opacidade */
+    /* cores com valor hex #fc9 */
+    /* hsl(cor,saturação, luminosidade) hsla(cor,saturação,luminosidade, alfa) */

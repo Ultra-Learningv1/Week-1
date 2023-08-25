@@ -15,27 +15,63 @@ o tamanho da letra entre outros
   <!-- !!! -->
 
   <head>
+    <!-- estilo interno quando temos css dentro dessa tag em um documento html -->
+    <!-- Para dois estilos definidos no mesmo elemento somente o ultimo é considerado -->
+    <style>
+      #umPara {
+        background-color: red;
+        text-align: center;
+      }
+      #Link {
+        border: 2px solid red;
+      }
+      #titulo {
+        text-align: center;
+      }
+      body {
+        /* define a imagem de background */
+        background-image: url(img/background.jpg);
+        opacity: 0.8;
+      }
+      #sinopse {
+        text-align: center;
+        color: white;
+        font-style: italic;
+        font-weight: 900;
+      }
+    </style>
+    <!-- Vincula um script externo javascript  -->
+    <!-- Podemos definir um scrip interno usando a tag <script> dentro do html -->
+    <script src="viva.js"></script>
     <!-- essa tag seve para importar estilos css, o atributo rel especifica qual o conteúdo desse arquivo e o href o caminho onde está o arquivo -->
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style1.css" />
     <!-- define qual é o padrão de caracteres da página ao ser lida -->
     <meta charset="UTF-8" />
     <!-- informações da janela acho... -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Título da Página -->
-    <title id="titulo">Star Wars</title>
+    <title>Star Wars</title>
   </head>
   <!-- dentro do body fica o corpo da página -->
   <body>
     <!-- Tamanhos de titulo h1 até h6 -->
     <!-- atributo style usado aqui para definir tamanho, aqui se usa tamanho em px  -->
     <!--    é uma propriedade do css -->
-    <h1 style="font: size 60px" style="text-align: center">Star Wars</h1>
-    <h3 style="text-align: center">O Império Contra-Ataca</h3>
+    <h1 style="font: size 60px; text-align: center; color: white">Star Wars</h1>
+    <h3
+      style="
+        text-align: center;
+        color: rgba(21, 93, 213, 0.91);
+        font-size: 25px;
+      "
+    >
+      O Império Contra-Ataca
+    </h3>
     <!-- quebra de linha, sem tag de fechamento -->
 
     <!-- Parágrafo -->
     <!-- o atributo title dentro da tag serve informações adicionais do elemento e também em questões como acessibilidade  -->
-    <p title="sinopse">
+    <p id="sinopse" title="sinopse">
       Os Rebeldes se separam após o ataque imperial no planeta Hoth. Enquanto
       Han Solo e a Princesa Leia são perseguidos pelo Império, Luke inicia seu
       treino como um Jedi com o Mestre Yoda, antes de enfrentar Darth Vader e
@@ -55,18 +91,24 @@ o tamanho da letra entre outros
     </p>
 
     <br />
+
     <!-- Aninhamento de elementos -->
-    <p style="text-align: center">
+    <p id="Link">
       <!-- Define um link, href dentro da tag de abertura sendo o próprio link, entre as tags o texto que será associado ao link -->
       <!-- href é um atributo -->
       <!-- style é um atributo que pode definir estilos para um item, nesse caso cor:vermelha -->
+      <!-- estilo embutido -->
       <a
-        style="color: red"
+        style="color: red; font-family: monospace; font-size: 30px"
         href="https://www.primevideo.com/detail/Star-Wars-O-Imp%C3%A9rio-Contra-Ataca-V/0O2UA3I2RIGIMMQIKNNOFP26VL?language=pt_BR#:~:
       text=Star%20Wars%3A%20O%20Imp%C3%A9rio%20Contra-Ataca%20%28V%29%20Os%20Rebeldes,Darth%20Vader%20e%20descobrir%20sobre%20o%20seu%20passado."
         >Assista Agora</a
       >
     </p>
+    <!-- define um script em javascript que busca um elemento por id e atribui o valor do alinhamento como center -->
+    <script>
+      document.getElementById("Link").style.textAlign = "center";
+    </script>
     <br />
     <!-- dentro deste parágrafo o navegador vai ignorar qualquer formatação de texto que você colocar -->
     <!-- para quebrar a linha é preciso usar a tag br -->
@@ -77,6 +119,12 @@ o tamanho da letra entre outros
     </p>
     <!-- segunda opção -->
     <!-- a tag pre define textos pré formatados -->
-    <pre>Originalmente lançado em 21 de Maio de      1980</pre>
+    <pre id="umPara">Originalmente lançado em 21 de Maio de      1980</pre>
+
+    <!-- Pode utilizado para alterar o conteúdo html -->
+    <script>
+      // document.getElementById("umPara").style.display > oculta um elemento da tela
+      document.getElementById("umPara").innerHTML="Originalmente lançado em 21 de Maio de 1980";
+    </script>
   </body>
 </html>
