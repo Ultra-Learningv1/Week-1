@@ -57,7 +57,9 @@ o tamanho da letra entre outros
     <!-- Tamanhos de titulo h1 até h6 -->
     <!-- atributo style usado aqui para definir tamanho, aqui se usa tamanho em px  -->
     <!--    é uma propriedade do css -->
-    <h1 id="til" style="font: size 60px; text-align: center; color: white">Star Wars</h1>
+    <h1 id="til" style="font: size 60px; text-align: center; color: white">
+      Star Wars
+    </h1>
     <h3
       style="
         text-align: center;
@@ -125,7 +127,9 @@ o tamanho da letra entre outros
     <!-- Strong ressalta importância e deixa em negrito , tag b somente negrito -->
     <p style="color: white"><b>Outros</b> <strong>títulos</strong></p>
     <!-- tag i - itálico, tag em - ênfase -->
-    <p id="filmeUm" style="color: white">Uma Nova <em>Esperança</em> (<i>1977</i>)</p>
+    <p id="filmeUm" style="color: white">
+      Uma Nova <em>Esperança</em> (<i>1977</i>)
+    </p>
     <!-- tag small - realmente diminui o tamanho , mark detaca um texto-->
     <p style="color: white">
       <small>O Retorno de</small> <mark>Jedi (1983) </mark>
@@ -135,8 +139,7 @@ o tamanho da letra entre outros
     <!-- sub poem o texto um pouco abaixo e o sup o oposto, ambos diminuem o texto -->
     <p style="color: white"><sub>Ataque dos</sub> <sup>Clones</sup> (2002)</p>
 
-    <p style="text-align: center; font-size: 20px;">
-
+    <p style="text-align: center; font-size: 20px">
       <!-- Navega para título usando o id dele como ref -->
       <!-- o elemento pode estar em outra página html
       
@@ -144,9 +147,8 @@ o tamanho da letra entre outros
       -->
       <a href="#til">volta para título</a>
     </p>
-    
 
-    <hr>
+    <hr />
     <!-- para o atributo target temos 4 opções:
     _self abre na mesma janela ou aba
     _blank nova janela ou guia 
@@ -168,5 +170,57 @@ o tamanho da letra entre outros
     tag cite citações de musicas, obras no geral, deixa o texto em itálico
     tag bdo inverte o texto bacanaaa
   -->
+
+    <h2 id="series">Séries do Universo Star Wars</h2>
+    <!-- lista ordenada numerada -->
+    <ol id="listaSeries">
+      <!-- item lista -->
+      <li>2008</li>
+      <!-- lista não ordenada -->
+      <ul>
+        <li>The Clone Wars</li>
+      </ul>
+      <li>2014</li>
+      <ul>
+        <li>Rebels</li>
+      </ul>
+      <li>2018</li>
+      <ul>
+        <li>Resistance</li>
+      </ul>
+      <li>2019</li>
+      <ul>
+        <li>The Mandalorian</li>
+      </ul>
+      <li>2021</li>
+      <ul>
+        <li>The Book of Boba Fett</li>
+      </ul>
+    </ol>
+    <hr />
+    <!-- lista de definição, itens organizados em pares -->
+    <dl id="recentes">
+      <!-- titulo ou item 1 -->
+      <dt>2022</dt>
+      <!-- texto ou item 2 -->
+      <dd>Obi-Wan Kenobi</dd>
+
+      <dt>2023</dt>
+      <dd>Ahsoka</dd>
+    </dl>
+<hr>
+    <!-- tag que engloba toda a parte do formulário -->
+    <form class="form">
+      <!-- elemento de entrada -->
+      <input type="text" placeholder="Teste2">
+      <select>
+        <option>The Clone Wars</option>
+        <!-- atributo value é o valor assiciado a opção selecionada -->
+        <option value="Rebels">Rebels</option>
+      </select>
+      <br>
+      <!-- elemento botão -->
+      <button>Join us</button>
+    </form>
   </body>
 </html>

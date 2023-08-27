@@ -1,13 +1,13 @@
 #breve {
-    /* alinha ao centro */
-    text-align: center;
-    /* define a cor dourada para o elemento que possui o id breve */
-    color: gold;
-    background-color: red;
+  /* alinha ao centro */
+  text-align: center;
+  /* define a cor dourada para o elemento que possui o id breve */
+  color: gold;
+  background-color: red;
 }
 /* Seleciona o elemento por id */
 #titulo {
-    text-align: center;
+  text-align: center;
 }
 /* Podemos também selecionar por classe p.center {}
    Para todos os elementos html * {} 
@@ -16,6 +16,22 @@
    p.center {}
     */
 
-    /* podemos definir cor com rgb(20,200,150) e rgba - mais um campo sendo alfa==opacidade */
-    /* cores com valor hex #fc9 */
-    /* hsl(cor,saturação, luminosidade) hsla(cor,saturação,luminosidade, alfa) */
+/* podemos definir cor com rgb(20,200,150) e rgba - mais um campo sendo alfa==opacidade */
+/* cores com valor hex #fc9 */
+/* hsl(cor,saturação, luminosidade) hsla(cor,saturação,luminosidade, alfa) */
+#series {
+  text-align: center;
+  color: white;
+  background-image: url(https://lumiere-a.akamaihd.net/v1/images/image_2702e35a.jpeg?region=0%2C33%2C1560%2C780);
+}
+
+#listaSeries{
+    color: white;
+}
+#recentes{
+    color: white;
+}
+.form{
+    text-align: center;
+    color: rgba(21, 93, 213, 0.91);
+}
